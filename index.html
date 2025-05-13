@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full_screen" id="tetris">
+        TETRIS
+        <p id='score'>Score: 0</p>
+        <p onclick="open_settings()">Settings</p>
+        <canvas id="game"></canvas>
+    </div>
+    <div class="full_screen" id="settings">
+        TETRIS
+        <p id="new_button" onclick="open_tetris(true)">New Game</p>
+        <p id="close_button" onclick="open_tetris(false)">Close</p>
+    </div>
+</body>
+<script src='https://cdn.jsdelivr.net/npm/three@0.139.2/build/three.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/three@0.139.2/examples/js/controls/DragControls.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/three@0.139.2/examples/js/controls/OrbitControls.min.js'></script>
+
+<script src="code.js"></script>
+</html>
